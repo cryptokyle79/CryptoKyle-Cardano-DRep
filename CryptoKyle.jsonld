@@ -1,0 +1,96 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "CryptoKyle"
+    },
+    "motivations": {
+      "@value": "I have been involved in the crypto space since 2014 and have educated hundreds of people in the space as well as helped them get started with cryptocurrency and the blockchain.  "
+    },
+    "objectives": {
+      "@value": "I believe in complete freedom and access to financial tools and services. I have been a Cardano holder since 2017 and believe in the mission. "
+    },
+    "paymentAddress": {
+      "@value": "addr1qyqz2s27r5g40nd93084qm3cwrs8emcfj7plut227nq2mtk326vdlwq88e6ggpcdxrzjtgjmlxwkx02g26ydm3wehcxs6z2eqk"
+    },
+    "qualifications": {
+      "@value": "I was the president of the American Bitcoin and Cryptocurrency Center for over 7 years."
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Facebook page"
+        },
+        "uri": {
+          "@value": "https://www.facebook.com/cryptokyle/"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "X Link"
+        },
+        "uri": {
+          "@value": "https://x.com/KyleWeiss"
+        }
+      }
+    ]
+  }
+}
